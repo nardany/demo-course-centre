@@ -1,0 +1,7 @@
+# Never upload local secrets or local-only data; Vercel uses the project's Environment Variables.
+.env*
+!.env.example
+data
+.next
+node_modules
+.claude

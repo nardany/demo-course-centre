@@ -1,0 +1,30 @@
+{
+  "name": "course-centre-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "deploy": "GIT_DIR=/nonexistent npx vercel@63.1.2 deploy --prod",
+    "deploy:preview": "GIT_DIR=/nonexistent npx vercel@63.1.2 deploy",
+    "db:reset-content": "node --no-warnings --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/reset-content.mts"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "postgres": "^3.4.9",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
